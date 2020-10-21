@@ -1,0 +1,986 @@
+* { 
+	box-sizing:border-box;
+    margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Titillium Web, sans-serif ;
+	background-color: #CCCCCC;
+	}
+
+body,html {
+	height: 100%;
+}
+
+/* Barra navegacion --------------------------------------------------------- */
+
+
+nav {
+	display: flex;
+  	flex-direction: row;
+  	flex-wrap: nowrap;
+  	justify-content: space-between;
+  	align-items:center;
+
+  	width: 99.2%;
+	color: black;
+	background-color: #CCCCCC;
+	border: solid;
+	border-width: 1px;
+	margin: 5px 0px 10px 5px;
+  }
+
+  .logo img {
+	width: 40%;
+	margin: 10px;
+}
+
+/* Boton de Menu */
+.botonMenu {
+  background-color: #CCCCCC;
+  color: black;
+  font-weight: bold;
+  padding: 14px 22px 14px 22px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  border-left: 1px solid black;
+  height: 70px;
+}
+
+/* Contenido de Menu */
+.menuContenido {
+  display: none;
+  position: absolute;
+  right: 8px;
+  background-color: #7B7B7B;
+  min-width: 360px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-size: 20px;
+}
+
+.menuContenido a {
+  color: #CCCCCC;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.menuContenido a:hover {
+	background-color: #CFFF00;
+	color: black;
+}
+
+.menu:hover .menuContenido {display: block;}
+
+.menu:hover .botonMenu {
+	background-color: black;
+	color: #CCCCCC;
+}
+
+/* Pagina Inicio --------------------------------------------------------- */ 
+
+.fotoFondo {
+	background-image: url("../Imagenes/Fondo-03.jpg");
+	min-width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.flexRow {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	margin-left: 50px;
+} 
+
+.flexColumn {
+	display: flex;
+  	flex-direction: column;
+  	flex-wrap: wrap;
+  	justify-content: flex-start;
+}
+
+.contenedorHola {
+	width: 600px;
+	height: 270px;
+	overflow: hidden;
+}
+
+.h6hola {
+	font-size: 200px;
+	letter-spacing:-15;
+	font-weight: 500;
+	padding-left: 10px;
+	margin-top: 200px;
+	animation: holaAnimado;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	animation-delay: 0.5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes holaAnimado {
+
+	from{ margin-top: 200px;}
+	to{ margin-top: 0px;}
+}
+
+.pInicio p {
+	font-size: 100px;
+	font-weight: 400; 
+	letter-spacing:-15;
+	line-height: 110px;
+	padding-bottom: 5px;
+}
+
+.contenedorP1 {
+	width: 900px;
+	height: 120px;
+	overflow: hidden;
+}
+
+.contenedorP1 p{
+	margin-top: 200px;
+	animation: p1Animado;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	animation-delay: 1.2s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes p1Animado {
+
+	from{ margin-top: 200px;}
+	to{ margin-top: 0px;}
+}
+
+.contenedorP2 {
+	width: 900px;
+	height: 120px;
+	overflow: hidden;
+}
+
+.contenedorP2 p{
+	margin-top: 200px;
+	animation: p2Animado;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	animation-delay: 1.9s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes p2Animado {
+
+	from{ margin-top: 200px;}
+	to{ margin-top: 0px;}
+}
+
+.contenedorP3 {
+	width: 900px;
+	height: 120px;
+	overflow: hidden;
+}
+
+.contenedorP3 p{
+	margin-top: 200px;
+	animation: p3Animado;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	animation-delay: 2.6s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes p3Animado {
+
+	from{ margin-top: 200px;}
+	to{ margin-top: 0px;}
+}
+
+.pBajada p{
+	font-size: 40px;
+	display: inline;
+	padding: 4px 10px 4px 10px;
+	border: solid;
+	border-width: 2px;
+	border-color: #CFFF00;
+	animation: pBajada;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	animation-delay: 3.4s;
+	animation-fill-mode: forwards;
+	opacity: 0%
+}
+
+@keyframes pBajada {
+
+	from{ opacity: 0%}
+	to{ opacity: 100%;}
+}
+
+.flecha {
+	width: 60%;
+	position: relative;
+	top: 75%;
+	right: 15%;
+}
+
+.miscelanea img{
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 10%;
+  	margin-top: 70px;
+}
+
+/* Listado de Trabajos */
+
+.tituloListado {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border: solid;
+	border-width: 1px;
+	margin: 100px 10px 20px 10px;
+	flex-wrap: wrap;
+}
+
+
+.h6Listado {
+	font-size: 100px;
+	letter-spacing:-15;	
+	font-weight: 500;
+	padding-left: 10px;
+}
+
+
+.miscelanea2 {
+	padding-top: 30px;
+}
+
+
+.cont-trabajos {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.cajaListado{
+	border: solid 1px;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+}
+
+
+.cont-trabajos .img-portada img {
+	width: 460px;
+	padding: 14px 10px 10px 10px;
+	border-right: 1px solid;
+}
+
+.carousel-item img {
+	width: 460px;
+	padding: 14px 10px 10px 10px;
+	border-right: 1px solid;
+}
+
+.tituloItem {
+	font-size: 70px;
+	margin-left: 20px;
+}
+
+.subtituloListado {
+	font-size: 25px;
+	border: solid;
+	border-width: 1px;
+	margin: 0px 20px 10px 20px;
+	padding-left: 10px;
+}
+
+.textoListado {
+	font-size: 25px;
+	font-weight: 100;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+
+.botonVerMas {
+	display: inline-block;
+	padding: 5px 15px 5px 15px;
+	margin: 20px;
+	font-size: 25px;
+	font-weight: 600;
+	color: #898989;
+	border: 1px solid;
+	background-image: linear-gradient(to right, rgba(255,0,0,0), #CFFF00);
+}
+
+.botonBase {
+	font-size: 40px;
+	display: flex;
+	justify-content: center;
+	margin: 10px 0px 0px 0px;
+}
+
+.botonBase a{
+	color:black;
+	border: 1px solid;
+	padding: 4px 15px 4px 15px;
+	margin-top: 10px;
+}
+
+
+.miscelanea3 img{
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 5%;
+  	margin-top: 70px;
+}
+
+.miscelanea4 {
+	padding-top: 17px;
+	padding-right: 10px;
+}
+
+.cajaContacto{
+	border: 1px solid;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-bottom: 150px;
+}
+
+.pBajada2 {
+	font-size: 40px;
+	display: inline-block;
+	padding: 4px 10px 4px 10px;
+	margin: 30px 0px 0px 10px;
+	border: solid;
+	border-width: 2px;
+	border-color: #CFFF00;
+}
+
+
+.botonBase2 {
+	font-size: 40px;
+	display: flex;
+	justify-content: center;
+	margin-top: 90px;
+}
+
+.botonBase2 a{
+	color:black;
+	border: 1px solid;
+	padding: 4px 15px 4px 15px;
+}
+
+
+hr {
+	border-top: 1px solid black;
+	margin: 40px 20px 30px 20px;
+}
+
+.pContacto {
+	font-size: 25px;
+	letter-spacing:-15;
+	display: flex;
+  	justify-content: center;
+
+}
+
+/* Trabajo 02 Flume ------------------------------------------------ */
+
+
+#grid {
+	border: solid 1px black;
+	margin: 5px 7px 10px 7px;
+	padding: 10px;
+	display: grid;
+	grid-template-rows: auto auto auto;
+	grid-template-columns: auto 520px auto; 
+	height: 700px; 
+	grid-template-areas:
+			"empty imagen category"
+            "nameProducto imagen trabajo"
+            "descripcion  imagen flecha";
+	grid-gap: 10px 10px;
+
+}
+
+
+.empty_space {
+	grid-area: empty;
+}
+
+.title-project {
+	grid-area: nameProducto;
+
+}
+
+.info-project {
+	grid-area: descripcion;
+}
+
+.pic-proyect {
+	grid-area: imagen;
+}
+
+.pic-proyect {
+	grid-area: imagen;
+}
+
+.category-project {
+	grid-area: category;
+}
+
+.fotoDisco {
+	grid-area: trabajo;
+}
+
+.flechaAbajo {
+	grid-area: flecha;
+}
+
+/*Tipografia Flunf*/
+
+.title-project p {
+	font-size: 100px;
+	letter-spacing:-15;	
+}
+
+.lineaFlume {
+	padding-left: 0px;
+	margin: -30px 0px -10px -10px;
+}
+
+.info-project p {
+	font-size: 25px;
+	font-weight: 100;
+}
+
+.pic-proyect img {
+	width: 90%;
+}
+
+.category-project p {
+	font-size: 25px;
+	border: solid;
+	border-width: 1px;
+	padding-left: 10px;
+}
+
+.fotoDisco img {
+	width: 80%;
+}
+
+.fotoDisco hr {
+	margin: 20px 20px 0px -1px;
+
+}
+
+.flechaAbajo img{
+	width: 10%;
+}
+
+.flunfTipografia img {
+	width: 96%;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
+
+/* Sobre el artista */
+
+.presentacion-Flume {
+	margin: 40px 10px 10px 10px;
+	border: 1px solid;
+}
+
+.tittle-Presentacion p{
+	font-size: 50px;
+	padding-left: 20px; 
+}
+
+.hrPresentacion {
+	margin-top: -5px;
+}
+
+.sobreFlume{
+	display: flex;
+}
+
+.sobreFlume img {
+	width: 40%;
+	height: 40%;
+	padding-left: 20px; 
+	padding-bottom: 20px;
+}
+
+.sobreFlume p {
+	padding-left: 20px; 
+	padding-right: 40px;
+	font-weight: 200;
+	font-size: 25px;
+
+}
+
+/*Logo*/
+.imagenesLogo {
+	display: flex;
+	justify-content: flex-start;
+	margin-left: 10px;
+	margin-right: 5px;
+	margin-bottom: 20px;
+}
+
+.imagenesLogo img{
+	width: 99%;
+}
+
+/*Editorial y vinilo */
+
+.imagenesEditorial {
+	display: grid;
+	grid-gap: 5px;
+	grid-template-columns: auto auto;
+	padding: 10px;
+}
+
+.imagenesEditorial img{
+	width: 99%;
+}
+
+.vinilo img{
+	width: 97.8%;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	margin-bottom: 30px;
+}
+
+/* Trabajo Bauen ------------------------------------------------ */
+
+/*Tote bag y Door Hanger */
+
+.tote-door {
+	display: flex;
+	justify-content: center;
+	margin-left: 10px;
+	margin-bottom: 40px;
+	margin-top: 10px;
+}
+
+.toteBag img{
+	width: 99%;
+}
+
+.imagenesDoor img{
+	width: 99%;
+}
+
+.doorHanger1 {
+	margin-bottom: 15px;
+}
+
+/*Brochure */
+
+.imagenesBrochure {
+	display: flex;
+	justify-content: center;
+	margin-left: 10px;
+	margin-bottom: 40px;
+}
+
+.imagenesBrochure img{
+	width: 50%;
+	padding-right: 10px;
+}
+
+/*Marquesina y Tarjeta*/
+
+.tarjeta-marquesina {
+	display: flex;
+	justify-content: center;
+	margin: 0px 5px 40px 15px;
+}
+
+.tarjeta-marquesina img{
+	margin-right: 10px;
+}
+
+.Tarjeta {
+	width: 29.7%;
+	height: 29.7%
+}
+
+.Marquesina {
+	width: 69.5%;
+	height: 69.5%
+}
+
+/*Marquesina y Tarjeta*/
+
+.afiches {
+	margin: 0px 10px 30px 20px;
+}
+
+
+.afiches img{
+	width: 99%;
+	padding-bottom: 10px;
+}
+
+
+/* Trabajo Dispositivo ------------------------------------------------ */
+
+
+#dispositivoId img {
+	width: 99%;
+}
+
+
+#dispositivoId {
+	display: grid;
+	grid-template-columns: auto auto; 
+	height: 30%; 
+	grid-gap: 10px 10px;
+	margin: 0px 10px 20px 10px;
+}
+
+
+
+/* Menu Inferior  -------------------------------------------------- */
+
+.navegacionInferior {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	padding: 5px 20px 5px 20px;
+	background-color: #CCCCCC;
+	overflow: hidden;
+  	position: fixed; 
+    bottom: 0;  
+    width: 100%; 
+   	border-top: solid;
+	border-width: 1px;
+	margin-top: 10px;
+}
+
+.navegacionInferior ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	background-color: red;
+}
+
+.navegacionInferior li{
+	color: black;
+	display: inline-block;
+	padding: 10px 30px;
+}
+
+.navegacionInferior li:hover{
+	background-color: #CFFF00;
+	color: black;
+}
+
+.boton1{
+	border-right: 1px solid black;
+  	height: 8%;
+  	text-decoration: none;
+  	padding-right: 3%;
+}
+
+.boton2{
+	border-right: 1px solid black;
+  	height: 8%;
+  	text-decoration: none;
+  	padding-right: 3%;
+}
+
+.boton3{
+	border-right: 1px solid black;
+  	height: 8%;
+  	text-decoration: none;
+  	padding-right: 3%;
+}
+
+.boton4{
+	border-right: 1px solid black;
+  	height: 8%;
+  	text-decoration: none;
+  	padding-right: 3%;
+}
+
+.boton5{
+	border-right: 1px solid black;
+  	height: 8%;
+  	text-decoration: none;
+  	padding-right: 3%;
+}
+
+
+
+
+.navegacionInferior2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px 0px 5px 0px;
+	background-color: #CCCCCC;
+	overflow: hidden;
+  	position: fixed; 
+    bottom: 0;  
+    width: 100%; 
+   	border-top: solid;
+	border-width: 1px;
+	margin-top: 10px;
+}
+
+.volver {
+	color: black;
+	text-decoration: none;
+}
+
+.volver p{
+		padding: 15px 20px 15px 20px;
+}
+
+.navegacionInferior2 p:hover{
+	background-color: #CFFF00;
+	color: black;
+}
+
+ /* Trabajos --------------------------------------------------------- */ 
+
+
+.h3Trabajos {
+	display: flex;
+	margin: 0em 0em 1em 1em;
+	font-size: 3em;
+}
+
+.ulTrabajos ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-bottom: 40px;
+}
+
+
+.ulTrabajos ul li {
+	display: inline;
+	padding: 0.4em 1em 0.4em 1em;
+	margin-left: 40px;
+	border-style: solid; 
+	border-color: #CFFF00;
+	border-width: 0.15em;
+	font-weight: bold;
+	border-radius: 4em;
+	text-decoration: none;
+}
+
+@media (max-width: 768px) {
+.ulTrabajos ul{
+flex-direction: column;
+}
+}
+
+@media (max-width: 768px) {
+.ulTrabajos ul li{
+margin-top: 20px;
+}
+}
+
+
+
+.row {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.row div img{
+	padding: 20px;
+	margin-bottom: 20px;	
+	margin-top: 20px;
+}
+
+
+.botonesTrabajos{
+  	width: 100%;
+  	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
+
+}
+
+.btn {
+	background-color: black;
+	color: #CFFF00;
+	border-radius: 5px;
+}
+
+
+
+/* Seccion Presentacion --------------------------------------------------------- */ 
+.fotoCV img{
+  border-radius: 50%;
+  width: 20%;
+  margin-left: 2em;
+  margin-right: 1em;
+  display: inline;
+  float: left;
+  margin-bottom: 5em;
+  margin-top: 2em;
+}
+
+.h3Presentacion {
+	font-size: 3em;
+	margin: 1em 0em 0em 0.4em;
+	padding: 0em 0em 0em 0em;
+}
+
+hr {
+	height: 0.5px;
+	border-color: black;
+	width: 70%;
+	margin-bottom: 2em;
+}
+
+.pPresentacion{
+	font-size: 1em;
+	margin-bottom: 5em;
+	padding-right: 5em;
+}
+
+.botones {
+	margin: 0em 0em 0em 16em;
+}
+
+.botones div {
+	display: inline;
+	padding: 0.4em 1em 0.4em 1em;
+	margin-right: 1em;
+	border-style: solid; 
+	border-color: #CFFF00;
+	border-width: 0.15em;
+	font-weight: bold;
+	border-radius: 4em;
+}
+
+.botones a {
+	text-decoration: none;
+	color: black;
+}
+
+
+/* Contacto --------------------------------------------------------- */ 
+
+.h6Contacto {
+	font-size: 80px;
+	letter-spacing:-15;
+	font-weight: 500;
+	padding-left: 10px;
+}
+
+.trabajemos {
+	font-size: 30px;
+	font-weight: 400; 
+	letter-spacing:-15;
+	padding-left: 15px;
+	margin-bottom: 30px;
+}
+
+
+form {
+	margin-left: 1em;
+	margin-right: 50em;
+}
+
+fieldset{
+	border-style: solid;
+	border-color: #CFFF00;
+	border-width: 0.1em;
+	padding: 1em 1em 1em 1em;
+	margin-bottom: 8em;
+
+}
+
+input{
+  width: 100%;
+  padding: 0.8em 1.5em;
+  margin: 0.5em 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
+  box-sizing: border-box;
+}
+
+
+input[type=checkbox] {
+	position: relative;
+	bottom: 1.9em;
+
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #555555;
+  color: white;
+  padding: 0.8em 1.5em;
+  margin: 0.5em 0;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+  input[type=submit]:hover {
+  background-color: #CFFF00;
+}
+
+
+
+/*Redes --------------------------------------------------------- */
+
+footer{
+	
+	background-color: #555555;
+	position: absolute;
+  	display: block;
+  	width: 100%;
+  	margin-top: 20px;
+  
+}
+
+.piePagina a{
+	float: right;
+	padding: 2em;
+
+}
+
+.piePagina a img{
+	width: 50px; 
+	height: 50px;
+}
+
+.pFooter {
+	font-family: Helvetica, sans-serif ;
+	color: white;
+	font-weight: lighter;
+	text-transform: uppercase;
+	font-size: 1em;
+	padding-top: 3em;
+	margin-left: 2em;
+
+}
