@@ -209,6 +209,22 @@ nav {
   top: 75%;
   right: 15%; }
 
+.flechaSubir2 img {
+  width: 4.5%;
+  position: absolute;
+  right: 0; }
+
+@media (max-width: 920px) {
+  .flechaSubir2 img {
+    width: 6.5%; } }
+
+.flechaSubir2 {
+  position: sticky;
+  top: 10px; }
+
+.flechaSubir2 img:hover {
+  background-color: #CFFF00; }
+
 .miscelanea img {
   display: block;
   margin-left: auto;
@@ -217,24 +233,19 @@ nav {
   margin-top: 120px;
   margin-bottom: 110px; }
 
-.flechaSubir img {
+.flechaSubir1 img {
   width: 4.5%;
   position: absolute;
   right: -8%; }
 
-.flechaSubir1 img {
-  width: 4.5%;
-  position: absolute;
-  right: 0; }
-
 @media (max-width: 920px) {
-  .flechaSubir img {
+  .flechaSubir1 img {
     width: 6.5%; } }
 
-.flechaSubir {
+.flechaSubir1 {
   position: sticky;
   top: 10px; }
-  .flechaSubir img:hover {
+  .flechaSubir1 img:hover {
     background-color: #CFFF00; }
 
 /* Listado de Trabajos */
@@ -529,7 +540,7 @@ h5 {
   width: 86%;
   margin-right: auto;
   margin-left: auto;
-  height: 2400px; }
+  height: 2800px; }
 
 .containerTrabajos {
   border: 1px solid;
@@ -564,6 +575,63 @@ h5 {
     width: 99%;
     padding-left: 10px;
     padding-bottom: 10px; }
+
+/* Contacto --------------------------------------------------------- */
+.h3Presentacion {
+  font-size: 80px;
+  letter-spacing: -15;
+  font-weight: 500;
+  padding-left: 10px;
+  margin-top: 50px;
+  margin-left: 70px; }
+
+.pContacto p {
+  font-size: 40px;
+  display: inline;
+  padding: 4px 10px 4px 10px;
+  margin-left: 5%;
+  border: solid;
+  border-width: 2px;
+  border-color: #CFFF00;
+  margin-bottom: 20px; }
+
+form {
+  width: 86%;
+  margin-left: auto;
+  margin-right: auto; }
+
+fieldset {
+  border-style: solid;
+  border-color: #CFFF00;
+  border-width: 0.1em;
+  padding: 1em 1em 1em 1em;
+  margin-bottom: 8em; }
+
+input {
+  width: 100%;
+  padding: 0.8em 1.5em;
+  margin: 0.5em 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
+  box-sizing: border-box; }
+
+input[type=checkbox] {
+  position: relative;
+  bottom: 1.9em; }
+
+input[type=submit] {
+  width: 100%;
+  background-color: #555555;
+  color: white;
+  padding: 0.8em 1.5em;
+  margin: 0.5em 0;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer; }
+
+input[type=submit]:hover {
+  background-color: #CFFF00; }
 
 /*Redes --------------------------------------------------------- */
 footer {

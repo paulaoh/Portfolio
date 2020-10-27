@@ -2,10 +2,11 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-widht, initial-scale=1.0">
 		<meta name="keywords"  content="HTML, PORTFOLIO, DISEÑO GRÁFICO, DISEÑADORA, GRAPHIC DESIGN, WEB DESIGN, EDITORIAL, BRANDING, SISTEMA IDENTIDAD">
-		<meta name="description" content="Contacto de Paula Ohringer, diseñadora gráfica establecida en Buenos Aires, Argentina. Recibida de la Universidad de Buenos Aires y futura desarrolladora Front End.">
-		<title>Contacto Paula Ohringer</title>
-		<link rel="stylesheet" type="text/css" href="css/NuevoCss.css">
+		<meta name="description" content="Hola, soy Paula Ohringer y este es mi portfolio. Soy diseñadora gráfica establecida en Buenos Aires, Argentina, recibida de la Universidad de Buenos Aires y futura desarrolladora Front End.">
+		<title>Presentación Paula Ohringer</title>
+		<link rel="stylesheet" type="text/css" href="css/pruebacss.css">
 	</head>
 
 	<body>
@@ -13,23 +14,25 @@
 	<!-- Caja barra navegacion !-->
 		
 	<nav>
-		<div class="logo">
+		<div class="nav__logo">
 			<a href="index.html"><img src="imagenes/Logo Paula-01.png"/></a>
 		</div>
-		<div class="menu">
-  			<button class="botonMenu">MENU</button>
-  			<div class="menuContenido">
+		<div class="nav__menu">
+  			<button class="nav__menu__boton">MENU</button>
+  			<div class="nav__menu__contenido">
   				<a href="index.html">Inicio</a>
    				<a href="Presentacion.html">Sobre Mi</a>
     			<a href="Trabajos.html">Trabajos</a>
     			<a href="Contacto.html">Contacto</a>
+  			</div>
 		</div>
-	</nav> <br/><br/>
+	</nav> 
 
  <!-- Seccion contacto !-->
  	<div>
- 		<h6 class="h6Contacto">Contacto</h6>
- 		<p class="trabajemos">Trabajemos juntxs!</p>
+ 		<h6 class="h3Presentacion">Contacto</h6>
+ 		<div class="pContacto">
+ 			<p>Trabajemos juntxs!</p></div>
  	<form>
  		<fieldset>
  			<label for="NombreApellido">Nombre y apellido</label>
@@ -65,21 +68,24 @@
  	</div>
  	<br/><br/>
 
- <footer id="redes">
- 		<div class="piePagina">
- 			<div> 
- 				<a href="https://www.behance.net/paulaohringer"> <img src="Imagenes/Behance_Logo.png"/> </a>
- 			</div>
- 			<div> 
- 				<a href=https://www.linkedin.com/in/paula-ohringer-66524a1a4/> <img src="Imagenes/Linkedin_Logo.png"/> </a>
- 			</div>
- 			<div>
- 				<a href="mailto:paulaohringer@gmail.com"><img src="Imagenes/Mail_Logo.png"/> </a>
- 			</div>
- 		</div>
- 		<p class="pFooter">Paula Ohringer 2020</p>
- 	</footer>
- 	
+
+<!-- Seccion de footer !-->
+
+  <footer id="redes">
+    <div class="footer">
+      <div> 
+        <a href="https://www.behance.net/paulaohringer" target="_blank"> <img src="Imagenes/Behance_Logo.png"/> </a>
+      </div>
+      <div> 
+        <a href=https://www.linkedin.com/in/paula-ohringer-66524a1a4/ target="_blank"> <img src="Imagenes/Linkedin_Logo.png"/> </a>
+      </div>
+      <div>
+        <a href="mailto:paulaohringer@gmail.com" target="_blank"><img src="Imagenes/Mail_Logo.png"/> </a>
+      </div>
+    </div>
+    <p class="footer_copy">Paula Ohringer 2020</p>
+  </footer>
+  
 </body>
 
 </html>
